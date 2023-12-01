@@ -2,16 +2,20 @@ package calisma;
 import java.util.Scanner;
 public class Calisma {
 public static void main(String[] args) {
-         int k;
-    Scanner input=new Scanner(System.in);
-    System.out.println("Faktöriyel sayısını giriniz:");
-    k=input.nextInt();
-    int toplam=1;
-    
-    for(int i=1;i<=k;i++){
-    toplam*=i;
-    System.out.println("Faktöriyel="+toplam);
-    }
+        double sıcaklık;
+        Scanner input=new Scanner(System.in);
+        System.out.print("Sıcaklık değerinizi girin:");
+        sıcaklık=input.nextDouble();
+        if(sıcaklık<5){
+        System.out.println("Kayak yap");
+        }else if(5<sıcaklık && sıcaklık<15){
+        System.out.println("Sinema izle");
+        }else if(15<sıcaklık && sıcaklık<25){
+        System.out.println("Piknik yap");
+        }else{
+        System.out.println("Yüzmeye git");
+        
+        }
     }
     
 }
