@@ -53,4 +53,3 @@ public class Gelismishesapmakine{
            while(secme != 0);
        }
    }
-//Çalıştırıldığında mod alma işleminde çok fazla sayı istiyor?
