@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Metotoplam{
+   public static int kucuk_harf(String metin){
+       int sayac=0;
+   for(int i=0;i<metin.length();i++){
+   if(metin.charAt(i)>='a'  && metin.charAt(i)<='z')   sayac++;
+   }
+   return sayac;
+   }public static void main(String [] args){
+   Scanner k=new Scanner(System.in);
+            System.out.println("Bir metin yazınız=");
+            String metin=k.nextLine();
+            System.out.println(kucuk_harf(metin));
+   }
+}
