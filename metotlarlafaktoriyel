@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Metotoplam{
+    public static int faktoriyel(int sayi){
+        int faktoriyelsonuc=1;
+    for(int i=sayi;i>=1;i--){
+     faktoriyelsonuc*=i;
+    }
+    return faktoriyelsonuc;
+    }public static void main(String [] args){
+        Scanner k=new Scanner(System.in);
+            System.out.println("Sayı giriniz=");
+            int sayi=k.nextInt();
+            System.out.println(sayi+"!="+faktoriyel(sayi));
+    }
+}
