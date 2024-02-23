@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Metotoplam{
+    public static int kacBasamak(int sayi){
+    int basamak=0;
+    while(sayi>0){
+    sayi/=10;
+    basamak++;
+    }
+    return basamak;
+    }public static void main(String [] args){
+    Scanner k=new Scanner(System.in);
+            System.out.print("Sayi girin=");
+            int sayi=k.nextInt();
+            System.out.println(sayi+"="+kacBasamak(sayi)+" basamaklıdır.");
+    }}
