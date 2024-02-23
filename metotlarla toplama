@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Metotoplam{
+public static double toplam(double a,double b){
+   return (a+b);
+}public static void main(String [] args){
+    Scanner k=new Scanner(System.in);
+    System.out.print("a değerini girin=");
+        double a=k.nextInt();
+    System.out.print("b değerini girin=");
+        double b=k.nextInt();
+            System.out.println("Toplam="+toplam(a,b));
+}
+}
