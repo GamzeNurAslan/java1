@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Metotoplam{
+public static int usAlma(int taban,int us){
+  int uslu=1;
+  for(int i=1;i<us;i++){
+  uslu*=taban;
+  }
+  return uslu;
+  }    public static void main(String [] args){
+        Scanner k=new Scanner(System.in);
+        System.out.print("Taban değerini girin:");
+        int taban=k.nextInt();
+        System.out.println("Üs değerini girin:");
+        int us=k.nextInt();
+        System.out.println("Üslü sayı="+usAlma(taban,us));
+  }}
