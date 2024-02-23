@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Metotoplam{
+    public static void adYazdir(String ad,int kackere){
+        for(int i=1;i<=kackere;i++){
+            System.out.println(i+".kere="+ad);
+        }}
+    public static void main(String [] args){
+    Scanner k=new Scanner(System.in);
+        System.out.print("Ad yazınız:");
+        String ad=k.nextLine();
+        System.out.print("Kaç kere yazılsın:");
+        int kackere=k.nextInt();
+        adYazdir(ad,kackere);
+    }
+}
