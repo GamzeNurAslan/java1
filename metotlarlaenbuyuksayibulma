@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Metotoplam{
+   public static int en_buyuk(int n1,int n2){
+   int enb=n1;
+   if(enb<n2)   enb=n2;
+   else    enb=n1;
+   return enb;
+   }
+   public static void main(String [] args){
+   Scanner k=new Scanner(System.in);
+       System.out.print("n1 gir=");
+       int n1=k.nextInt();
+       System.out.print("n2 gir=");
+       int n2=k.nextInt();
+       System.out.println("En büyük sayı="+en_buyuk(n1,n2));
+   }
+}
