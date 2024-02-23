@@ -12,5 +12,5 @@ public static int usAlma(int taban,int us){
         int taban=k.nextInt();
         System.out.println("Üs değerini girin:");
         int us=k.nextInt();
-        System.out.println("Üslü sayı="+usAlma(taban,us));
+        System.out.println(taban+"^"+us+"="+usAlma(taban,us)); 
   }}
