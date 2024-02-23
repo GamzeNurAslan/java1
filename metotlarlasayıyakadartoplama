@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Metotoplam{
+   public static int toplam(int sayi){
+       int toplam=0;
+   for(int i=0;i<=sayi;i++){
+       toplam+=i;
+   }
+   return toplam;
+   }    public static void main(String [] args){
+        Scanner k=new Scanner(System.in);
+        System.out.println("Sayı giriniz=");
+        int sayi=k.nextInt();
+        System.out.println("Toplam="+toplam(sayi));
+   }
+}
