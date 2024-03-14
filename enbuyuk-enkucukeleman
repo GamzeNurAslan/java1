@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Patikas{
+public static void main(String [] args){
+  Scanner k=new Scanner(System.in);
+  int [] dizi={1,2,3,4,5};
+  int max=dizi[0];
+  int min=dizi[0];
+  for(int i=0;i<dizi.length;i++){
+     if(max<dizi[i])  max=dizi[i];
+     else if(min>dizi[i])   min=dizi[i];
+  }
+    System.out.println("En büyük eleman:"+max);
+    System.out.println("En küçük eleman:"+min);
+  }
+}
