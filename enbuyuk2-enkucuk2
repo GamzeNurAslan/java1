@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Patikas{
+public static void main(String [] args){
+    Scanner k=new Scanner(System.in);
+int [] dizi={5,10,15,20,25};
+    System.out.print("Sayı giriniz:");
+    int n=k.nextInt();
+   int smaller=Integer.MAX_VALUE;
+   int larger=Integer.MIN_VALUE;
+   for(int number:dizi){
+   if (number < n && Math.abs(number - n) < Math.abs(smaller - n)) {
+                smaller = number;
+            }
+            if (number > n && Math.abs(number - n) < Math.abs(larger - n)) {
+                larger = number;
+            }
+   }
+    System.out.println("EN uzun="+larger);
+    System.out.println("EN kısa="+smaller);
+}
+}
