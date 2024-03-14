@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String [] args){
+  Scanner k=new Scanner(System.in);
+      System.out.print("Sayı giriniz:");
+      int n=k.nextInt();
+      double sonuc=0.0;
+      for(double i=1;i<=n;i++){
+           sonuc+=(1/i);
+      }
+      double ortalama=(n/sonuc);
+      System.out.println(ortalama);
+  }
+}
