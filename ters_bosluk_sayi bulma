@@ -1,0 +1,58 @@
+//İçindeki boşluk sayısı, harf sayısı, tersten yazılışı, kelime sayısını bulan program
+import java.util.Scanner;
+public class Dosyalar{
+    public static int harf(String cumle){
+    int sonuc = cumle.length();
+    for(int i=0;i<cumle.length();i++){
+       if(cumle.charAt(i)== ' '){
+          sonuc--;
+       }
+    }
+    return sonuc;
+    }
+    public static int cumleS(String cumle){
+    int adet = 1;
+    for(int i=0;i<cumle.length();i++){
+    if(cumle.charAt(i)==' '){
+          adet++;
+    }
+    }
+    return adet;
+    }
+    public static String ters(String cumle){
+    String sonuc = " ";
+    for(int i=cumle.length()-1;i>=0;i--){
+    sonuc+=cumle.charAt(i);
+    }
+    return sonuc;
+    }
+    public static int sesli(String cumle){
+    String sesli = "aeioüuö";
+    int adet=0;
+    for(int i=0;i<cumle.length();i++){
+    if(sesli.indexOf(cumle.charAt(i))>=0){
+    adet++;
+    }
+    }
+    return adet;
+    }
+    public static int bosluk(String cumle){
+    int adet=0;
+    for(int i=0;i<cumle.length();i++){
+    if(cumle.charAt(i)==' '){
+    adet++;
+    }
+    }
+    return adet;
+    }
+public static void main(String [] args){
+Scanner k = new Scanner(System.in);
+    System.out.print("Bir cümle giriniz:");
+    String cumle = k.nextLine();
+    System.out.println("harf sayısı = "+harf(cumle));
+    System.out.println("kelime sayısı = "+cumleS(cumle));
+    System.out.println("tersten yazımı = "+ters(cumle));
+    System.out.println("sesli sayı = "+sesli(cumle));
+    System.out.println("boşluk sayısı ="+bosluk(cumle));
+}
+}
