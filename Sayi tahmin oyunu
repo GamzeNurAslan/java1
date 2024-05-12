@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.util.Random;
+public class RandomSayi{
+public static void main(String [] args){
+Scanner k = new Scanner(System.in);
+Random oyle = new Random();
+int oyle_sayi = 1 + oyle.nextInt(49);
+    System.out.println("Oylesine atanacak sayi 1-50 araligindadir.");
+    int sayi,sayac=0;
+    do{
+        System.out.print("Bir sayi giriniz : ");
+        sayi = k.nextInt();
+        if(sayi > oyle_sayi){
+            System.out.println("Sayiyi biraz kucultun");
+        }else if(sayi < oyle_sayi){
+            System.out.println("Sayiyi biraz arttirin");
+        }
+        sayac++;
+    }
+    while(sayi != oyle_sayi);
+    System.out.println("Tebriks "+sayac+". denemede sayiyi buldunuz :)");
+}
+}
